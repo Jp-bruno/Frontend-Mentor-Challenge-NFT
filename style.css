@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400&display=swap');
+
+* {   
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color:  hsl(217, 54%, 11%);
+}
+
+.card_wrapper {
+    width: 320px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.main-image {
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+strong {
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.paragraph {
+    font-size: 16px;
+}
+
+.strong, .paragraph {
+    margin: 20px 0 0 0;
+}
+
+.paragraph, .days-left, .creation {
+    color:hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+
+.icon-ethereum {
+    color: hsl(178, 100%, 50%);
+    font-weight: 400;
+}
+
+span {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.info span img {
+    margin: 0 6px 0 0;
+    height: 80%;
+}
+
+hr {
+    background-color: hsl(215, 51%, 70%);
+    border: none;
+    height: 1px;
+    opacity: 0.2;
+}
+
+.about {
+    display: flex;
+    margin: 15px 0 10px 0;
+}
+
+.about img {
+    width: 12%;
+    border: solid 1px white;
+    margin: 0 15px 0 0;
+    border-radius: 50px;
+}
+
+.creator-name {
+    color: white;
+}
+
+.strong:hover, .creator-name:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.creator-name, .strong {
+    transition: color 0.2s ease;
+}
+
+.img-backdrop {
+    position: absolute;
+    height: 50.5%;
+    border-radius: 8px;
+    width: calc(100% - 40px);
+    top: 4%;
+    background-color: hsla(178, 100%, 50%, 0.514);
+    background-image: url('./images/icon-view.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    pointer-events: none;
+}
+
+.main-image-wrapper:hover > .img-backdrop {
+    opacity: 1;
+}
+
+
+
+
+
